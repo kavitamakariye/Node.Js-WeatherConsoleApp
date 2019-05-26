@@ -12,8 +12,7 @@ request(url,function(err,response,body){
     else{
         //console.log('body:',body);
         let weather = JSON.parse(body);
-let message = `It's ${weather.main.temp} degrees in ${weather.name
-}!`;
+let message = `It's ${weather.main.temp} degrees in ${weather.name}!`;
 console.log(message);
     }
 });
